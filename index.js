@@ -1,5 +1,3 @@
-console.log(`${em}${pg} ${root} ${kng}`);
-
 var colors = ["#ff9090","#ff9f80", "#80bfff", "#8c66ff", "#80ff80", "#ffff80"];
 var em = "Pro";
 function randomColor() {
@@ -144,3 +142,5 @@ function checkKeyPressed(e) {
   
   }
 }
+
+console.log(`${em}${pg} ${root} ${kng}`);
