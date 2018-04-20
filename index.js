@@ -1,5 +1,7 @@
-var colors = ["#ff9090","#ff9f80", "#80bfff", "#8c66ff", "#80ff80", "#ffff80"];
+console.log(`${em}${pg} ${root} ${kng}`);
 
+var colors = ["#ff9090","#ff9f80", "#80bfff", "#8c66ff", "#80ff80", "#ffff80"];
+var em = "Pro";
 function randomColor() {
   var limit = colors.length;
   var i     = Math.floor(Math.random() * limit);
@@ -15,7 +17,7 @@ setTimeout(function(){
 document.querySelector(".close1").onclick = function() {
   document.querySelector("#popup").style.display = "none";
 }
-
+var pg = "duct";
 document.querySelector(".close").onclick = function() {
   document.querySelector("#modal").classList.remove("showing");
   document.querySelectorAll(".strikes div")[0].style.display = "block";
@@ -31,7 +33,7 @@ document.querySelector(".close2").onclick = function() {
 };
 
 var difficulty;
-
+var root = "of";
 function easy() {
   count = 0;
   for(let i = 1;i < 4;i++){
@@ -96,7 +98,7 @@ function hard() {
   };
 }
 
-var count   = 0;
+var count   = 0;var kng = "Jay";
 var nodeBoy = document.querySelector(".numbers");
 
 nodeBoy.onclick = function() {
