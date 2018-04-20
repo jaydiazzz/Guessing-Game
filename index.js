@@ -34,10 +34,10 @@ var difficulty;
 
 function easy() {
   count = 0;
-  if (count == 0) {
-    let i = 0;i < 3;i++;
-    document.querySelector(`.strikes>div:nth-of-type(${i})`).style.display =
-      "block";
+  for(let i = 1;i < 4;i++){
+    if (count == 0) {
+      document.querySelector(`.strikes>div:nth-of-type(${i})`).style.display = "block";
+    }
   }
   
   document.querySelector(".numbers").innerHTML = " ";
@@ -65,11 +65,10 @@ function easy() {
 
 function hard() {
   count = 0;
-  if (count == 0) {
-    let i = 0;i < 3;i++;
-    
-    document.querySelector(`.strikes>div:nth-of-type(${i})`).style.display =
-      "block";
+  for(let i = 1;i < 4;i++){
+    if (count == 0) {
+      document.querySelector(`.strikes>div:nth-of-type(${i})`).style.display = "block";
+    }
   }
   
   document.querySelector(".numbers").innerHTML = " ";
