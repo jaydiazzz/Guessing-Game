@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="instructions">
+    <h1>Instructions</h1>
+    <ol>
+      <li>You get <strong>3 chances</strong> to choose the correct number.</li>
+      <li>If you fail, your tries will restart and you may continue.</li>
+      <li>To start a <strong style="text-decoration:underline;">new game</strong> click your difficulty setting again.</li>
+    </ol>
+    <h4>Ready to play?</h4>
+    <a href="#" onclick="remove()">Yeah!</a>
+  </div>
+  <div id="modal">
+    <p>Correct!</p>
+    <div class="close"> X </div>
+    <div id="pegasus"></div>
+  </div>
+  <div id="wrong">
+    <p>Don't get mad</p>
+    <div class="close2"> X </div>
+    <div id="kicking"></div>
+  </div>
+  <div class="strikes">
+    <p>Lives:</p>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="options">
+    <button onclick="easy()" id="easy">Easy</button>
+    <button onclick="hard()" id="hard">Hard</button>
+  </div>
+  <div class="numbers">
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
