@@ -226,10 +226,6 @@ button:last-of-type{
 }
 
 @media screen and (max-width:650px){
-  body{
-    width:100vw;
-  }
-
   #kicking,#pegasus{
     width:90%!important;
     margin-left:5%;
