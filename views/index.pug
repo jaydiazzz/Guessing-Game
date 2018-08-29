@@ -1,18 +1,38 @@
 extends LAYOUT.pug
 
 block customCSS
+	link(rel="stylesheet", href="./static/css/index.css")
 
 block content
-	h1 {{ greeting }}
-	if ( env == 'development' )
-		h1 You are in the development environment
-		p This is all using development shit
-		p well done
-		a( href="https://www.youtube.com/watch?v=eh7lp9umG2I&t=1871s" ) Environment Information
-	else if ( env == 'production' )
-		h1 you are in a production environment
-		p please dont't ruin anything.
-		p i'm serious
+	#instructions
+		h1 Instructions
+		ol
+			li You get 
+				strong 3 chances
+				|  to choose the correct number.
+			li If you fail, your tries will restart and you may continue.
+			li To start a 
+				strong(style='text-decoration:underline;') new game
+				|  click your difficulty setting again.
+		h4 Ready to play?
+		a(href='#', onclick='remove()') Yeah!
+	#modal
+		p Correct!
+		.close  X 
+		#pegasus
+	#wrong
+		p Don't get mad
+		.close2  X 
+		#kicking
+	.strikes
+		p Lives:
+		div
+		div
+		div
+	.options
+		button#easy(onclick='easy()') Easy
+		button#hard(onclick='hard()') Hard
+	.numbers
 
 block customJS
 	script(src='/static/js/index.js')
