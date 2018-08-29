@@ -36,7 +36,6 @@ node_modules
 jspm_packages
 public/.sass-cache
 *.map
-public/css
 .sass-cache
 env.json
 package-lock.json
